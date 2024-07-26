@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_up_bg"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="25dp"
+    android:orientation="vertical"
+   >
+    <ImageView
+        android:id="@+id/cancel_pop_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:src="@drawable/outline_cancel_24"/>
+    <TextView
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16dp"
+        android:text="@string/todo_text"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="@dimen/_8dp"
+        android:id="@+id/todos_text_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:boxStrokeColor="@color/pale_blue"
+        app:hintTextColor="@color/pale_blue">
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/autocomplete_todos"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:focusableInTouchMode="true"
+            android:hint="@string/todos"
+            android:iconifiedByDefault="false"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:paddingEnd="@dimen/_14dp"
+            android:singleLine="true"
+            android:textAppearance="@style/radio"
+            android:theme="@style/MyEditTextTheme1"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/_14dp"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16dp"
+            android:text="@string/is_completed"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:text="@string/true_" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:layout_marginStart="@dimen/_14dp"
+                android:text="@string/false_" />
+
+        </RadioGroup>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/_14dp"
+        android:layout_marginHorizontal="@dimen/_16dp"
+        app:cornerRadius="@dimen/_16dp"
+        android:textAppearance="@style/radio"
+        app:backgroundTint="@color/pale_blue"
+        android:text="@string/submit"/>
+
+
+</LinearLayout>

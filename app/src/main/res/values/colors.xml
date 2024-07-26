@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="false_todos">#E3F2FD</color>
+    <color name="true_todos">#E8F5E9</color>
+    <color name="edit_border_color">#E3F2FD</color>
+    <color name="pale_blue">#0065B3</color>
+    <color name="selected_color">#0065B3</color>
+    <color name="unselected_color">#FF000000</color>
+</resources>
