@@ -16,5 +16,5 @@ class TodosRepositoryImpl @Inject constructor() :TodosRepository{
 
 //    override fun updateTodo(id: Int, updatedTodo: TodosTable)=todosQueries.updateTodo(id,updatedTodo)
 
-    override fun deleteTodo(id: Int)=todosQueries.deleteTodo(id)
+    override fun deleteTodo(id: String)=todosQueries.deleteTodo(id)
 }

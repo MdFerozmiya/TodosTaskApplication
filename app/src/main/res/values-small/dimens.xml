@@ -1,3 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="fab_margin">14dp</dimen>
+    <dimen name="_25dp">22dp</dimen>
+    <dimen name="_16dp">14dp</dimen>
+    <dimen name="_14dp">12dp</dimen>
+    <dimen name="_12dp">10dp</dimen>
+    <dimen name="_10dp">8dp</dimen>
+    <dimen name="_8dp">6dp</dimen>
+    <dimen name="_30dp">27dp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="_40dp">38dp</dimen>
+    <dimen name="_45dp">43dp</dimen>
+    <dimen name="_50dp">47dp</dimen>
+    <dimen name="_300dp">295dp</dimen>
 </resources>

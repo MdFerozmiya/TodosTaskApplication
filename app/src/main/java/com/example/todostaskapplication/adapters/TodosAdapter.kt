@@ -4,8 +4,6 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.todostaskapplication.R
@@ -31,6 +29,7 @@ class TodosAdapter(
     @SuppressLint("UseCompatLoadingForDrawables")
     override fun onBindViewHolder(holder: TodosViewHolder, position: Int) {
        val view =  holder.binding
+        view.tvTodo.text = todoList[holder.adapterPosition].todo
         if (todoList[holder.adapterPosition].completed!!){
             view.linearLayout.background = context.resources.getDrawable(R.drawable.bg_for_todos_completed)
         }else{

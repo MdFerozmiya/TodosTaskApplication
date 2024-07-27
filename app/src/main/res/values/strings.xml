@@ -44,14 +44,21 @@
     </string>
     <string name="edit_photo">Edit Photo</string>
     <string name="all_todos">All Todos</string>
-    <string name="todos">Todos</string>
+    <string name="todos">Todos </string>
     <string name="true_">Yes</string>
     <string name="false_">No</string>
-    <string name="is_completed">Is Completed :</string>
+    <string name="is_completed">Is Completed <font color="red">*</font></string>
     <string name="todo_text">Enter todo text :</string>
     <string name="submit">Submit</string>
     <string name="update">Update</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="are_you_sure_want_to_delete_this_todo">Are You Sure want to delete this todo ?</string>
+    <string name="todo_cannot_be_empty">Todo cannot be empty</string>
+    <string name="select_the_completed_option">Select the Completed option</string>
+    <string name="enter_todo_text">Enter todo text</string>
+    <string name="todo_created_successfully">Todo created successfully..</string>
+    <string name="todo_updated_successfully">Todo updated successfully..</string>
+    <string name="todo_deleted">Todo deleted !!</string>
+    <string name="no_internet">No internet !!</string>
 </resources>

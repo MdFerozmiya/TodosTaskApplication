@@ -8,6 +8,6 @@ interface TodosRepository {
     fun addTodo(todo: TodosTable)
     fun getTodos(): List<TodosTable>
 //    fun updateTodo(id: Int, updatedTodo: TodosTable)
-    fun deleteTodo(id: Int)
+    fun deleteTodo(id: String)
     fun addAllTodos(todo: ArrayList<TodosTable>)
 }

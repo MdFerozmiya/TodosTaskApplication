@@ -44,7 +44,7 @@ interface WebServices {
     @POST("todos/add")
     suspend fun addTodoApi(
         @Body todo: RequestTodo
-    ): Todos
+    ):Call<Todos>
 
     @Headers("Content-Type: application/json")
     @PUT("todos/{id}")
